@@ -34,24 +34,32 @@ export default function Header({ name, idade, children }) {
   return (
     <React.Fragment>
       <div className="header-container">
-        <div>
-          <img className="header-img" src="/avatar.png" />
-        </div>
+        <div className="header-content">
+          <div>
+            <img className="header-img" src="/avatar.png" />
+          </div>
 
-        <div>
-          <h1 className="header-name">Pedro Alves</h1>
-          <h2 className="header-description">
-            Estagiário de desenvolvimento Full-Stack
-          </h2>
+          <div>
+            <h1 className="header-name">Pedro Alves</h1>
+            <h2 className="header-description">
+              Estagiário de desenvolvimento Full-Stack
+            </h2>
 
-          <div className="header-icons">
-            {socialLinks.map((item, index) => (
-              <SocialIcon key={index} icon={item.icon} url={item.url} />
-            ))}
+            <div className="header-icons">
+              {socialLinks.map((item, index) => (
+                <SocialIcon key={index} icon={item.icon} url={item.url} />
+              ))}
+            </div>
           </div>
         </div>
-
-        <div>{/* <Button text="" color="" /> */}</div>
+        <div className="header-contact">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=+5551996801223"
+          >
+            <button>WhatsApp</button>
+          </a>
+        </div>
       </div>
     </React.Fragment>
   );

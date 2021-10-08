@@ -51,7 +51,9 @@ export default function Comments() {
             placeholder="Digite seu comentário"
           />
 
-          <button onClick={insertComment}>Enviar</button>
+          <div className="button-content">
+            <button onClick={insertComment}>Enviar</button>
+          </div>
         </div>
 
         {comments &&

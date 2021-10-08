@@ -48,7 +48,9 @@ export default function Comments() {
             placeholder="Digite seu E-mail"
           />
 
-          <button onClick={insertContact}>Enviar</button>
+          <div className="button-content">
+            <button onClick={insertContact}>Enviar</button>
+          </div>
         </div>
       </div>
     </React.Fragment>
