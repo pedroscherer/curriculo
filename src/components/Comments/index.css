@@ -1,0 +1,33 @@
+.comment-container {
+  margin-bottom: 30px;
+}
+
+.comment-item {
+  color: #666;
+  font-size: 16px;
+  border-left: 5px solid #9fdeb7;
+  padding: 5px 15px;
+  margin-bottom: 35px;
+}
+
+.comment-item svg {
+  margin-right: 15px;
+}
+
+.comment-author {
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.comment-author-name {
+  color: #939ea9;
+  font-weight: 600;
+}
+
+.comment-new {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+.icon-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b0b7bf;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.icon-content svg {
+    padding-top: 5px;
+}

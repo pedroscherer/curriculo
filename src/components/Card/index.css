@@ -1,0 +1,22 @@
+.card-container {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 0.25rem;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #545e69;
+  font-size: 24px;
+}
+
+.card-container p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.7;
+}

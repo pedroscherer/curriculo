@@ -1,0 +1,18 @@
+.info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.info-item svg {
+  margin-right: 15px;
+}
+
+.info-item label {
+  color: #3aaa64;
+  font-weight: 200;
+  line-height: 1.7;
+}
