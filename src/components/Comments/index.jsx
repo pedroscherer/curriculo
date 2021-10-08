@@ -20,19 +20,21 @@ export default function Comments() {
   }, []);
 
   const insertComment = () => {
-    api
-      .post("/comentarios/novo", {
-        name,
-        text,
-        createDate: new Date(),
-      })
-      .then((response) => {
-        setText("");
-        setName("");
-      })
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
+    if (text !== "" && name !== "") {
+      api
+        .post("/comentarios/novo", {
+          name,
+          text,
+          createDate: new Date(),
+        })
+        .then((response) => {
+          setText("");
+          setName("");
+        })
+        .catch((err) => {
+          console.error("ops! ocorreu um erro" + err);
+        });
+    }
   };
 
   return (
@@ -43,12 +45,12 @@ export default function Comments() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Digite seu nome"
+            placeholder="Nome"
           />
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Digite seu comentário"
+            placeholder="Comentário"
           />
 
           <div className="button-content">

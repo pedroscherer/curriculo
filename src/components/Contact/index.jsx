@@ -33,19 +33,19 @@ export default function Comments() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Digite seu nome"
+            placeholder="Nome"
           />
           <input
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="Digite seu WhatsApp"
+            placeholder="WhatsApp"
           />
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Digite seu E-mail"
+            placeholder="E-mail"
           />
 
           <div className="button-content">

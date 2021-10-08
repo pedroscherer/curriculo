@@ -9,6 +9,10 @@
   margin-right: 10px;
 }
 
+.icon-content:hover {
+  background: #616468;
+}
+
 .icon-content svg {
-    padding-top: 5px;
+  padding-top: 5px;
 }
