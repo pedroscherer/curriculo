@@ -33,7 +33,7 @@ export default function Home() {
             <Comments />
           </Card>
 
-          <Card title="Comentários">
+          <Card title="Entre em contato">
             <Contact />
           </Card>
         </div>
