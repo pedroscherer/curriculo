@@ -1,7 +1,7 @@
-import React from "react";
-import { IoLocationSharp, IoMailOpenSharp, IoLinkSharp } from "react-icons/io5";
+import React from 'react';
+import { IoLocationSharp, IoMailOpenSharp, IoLinkSharp } from 'react-icons/io5';
 
-import "./index.css";
+import './index.css';
 
 export default function UserInfo({}) {
   return (

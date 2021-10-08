@@ -1,15 +1,14 @@
-import React from "react";
-import "./index.css";
+import React from 'react';
+import './index.css';
 
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaGithubAlt,
   FaInstagram,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
-import SocialIcon from "../SocialIcon";
-import Button from "../SocialIcon";
+import SocialIcon from '../SocialIcon';
 
 export default function Header({ name, idade, children }) {
   const socialLinks = [

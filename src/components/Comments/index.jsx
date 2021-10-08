@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import api from "../../services/api";
+import React, { useEffect, useState } from 'react';
+import api from '../../services/api';
 
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft } from 'react-icons/fa';
 
-import "./index.css";
+import './index.css';
 
 export default function Comments() {
   const [comments, setComments] = useState();
