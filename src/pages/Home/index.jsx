@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../../components/Header';
-import Card from '../../components/Card';
-import UserInfo from '../../components/UserInfo';
-import Comments from '../../components/Comments';
-import Contact from '../../components/Contact';
+import Header from "../../components/Header";
+import Card from "../../components/Card";
+import UserInfo from "../../components/UserInfo";
+import Comments from "../../components/Comments";
+import Contact from "../../components/Contact";
+import Experience from "../../components/Experience";
 
-import './index.css';
+import "./index.css";
+
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
   document.title = "Pedro Alves";
@@ -49,17 +52,22 @@ export default function Home() {
               Dentre algumas habilidades que tenho, acredito que o meu
               diferencial seja a minha pró atividade em solução de problemas,
               bem como, um ótimo relacionamento em atividades com equipe. Abaixo
-              algumas lingaguens de programação que usei para realizar o Desafio
+              algumas linguagens de programação que usei para realizar o Desafio
               e que estou em constante aprendizado:
             </p>
 
-            <h4>React</h4>
-            <h4>NodeJS</h4>
-            <h4>HTML, CSS, JavaScript</h4>
-            <h4>MongoDB</h4>
+            <Experience />
           </Card>
         </div>
       </div>
+
+      <a
+        href="https://api.whatsapp.com/send?phone=+5551996801223"
+        target="_blank"
+        class="whatsapp-float"
+      >
+        <FaWhatsapp size={30} color="#fff" />
+      </a>
     </React.Fragment>
   );
 }

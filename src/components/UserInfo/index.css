@@ -4,7 +4,10 @@
 }
 
 .info-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
+  word-break: break-word;
 }
 
 .info-item svg {
@@ -14,5 +17,16 @@
 .info-item label {
   color: #3aaa64;
   font-weight: 200;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+.info-item label:hover {
+  text-decoration: underline;
+}
+
+.info-item span {
+  color: black;
+  font-weight: 300;
   line-height: 1.7;
 }

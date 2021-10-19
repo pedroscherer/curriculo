@@ -1,16 +1,17 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaGithubAlt,
   FaInstagram,
-} from 'react-icons/fa';
+  FaWhatsapp,
+} from "react-icons/fa";
 
-import SocialIcon from '../SocialIcon';
+import SocialIcon from "../SocialIcon";
 
-export default function Header({ name, idade, children }) {
+export default function Header() {
   const socialLinks = [
     {
       icon: <FaFacebookF size={20} color="#fff" />,
@@ -35,7 +36,7 @@ export default function Header({ name, idade, children }) {
       <div className="header-container">
         <div className="header-content">
           <div>
-            <img className="header-img" src="/avatar.png" />
+            <img className="header-img" src="/avatar.png" alt="avatar" />
           </div>
 
           <div>
@@ -51,12 +52,16 @@ export default function Header({ name, idade, children }) {
             </div>
           </div>
         </div>
+
         <div className="header-contact">
           <a
             target="_blank"
             href="https://api.whatsapp.com/send?phone=+5551996801223"
           >
-            <button>WhatsApp</button>
+            <button className="whatsapp-button">
+              <FaWhatsapp size={24} color="#fff" />
+              WhatsApp
+            </button>
           </a>
         </div>
       </div>

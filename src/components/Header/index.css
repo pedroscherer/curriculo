@@ -4,8 +4,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  padding: 30px 100px;
+  padding: 30px 75px;
   background: #f5f5f5;
   border-top: 10px solid #778492;
 }
@@ -13,6 +12,7 @@
 .header-content {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .header-img {
@@ -45,7 +45,37 @@
 }
 
 .header-contact {
-  width: 32%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 932px) {
+  .header-container {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .header-name {
+    font-size: 32px;
+  }
+
+  .header-description {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-img {
+    margin-right: 0px;
+  }
+
+  .header-icons {
+    justify-content: center;
+    margin-bottom: 0px;
+  }
 }

@@ -1,11 +1,11 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 
 export default function SocialIcon({ icon, url }) {
   return (
     <React.Fragment>
       <div className="icon-content">
-        <a target="_blank" href={url}>
+        <a target="_blank" rel="noreferrer" href={url}>
           {icon}
         </a>
       </div>

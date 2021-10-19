@@ -1,0 +1,25 @@
+.experience-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-item {
+  margin-bottom: 18px;
+}
+
+.skill-name {
+  font-weight: 700;
+  color: #778492;
+  font-size: 16px;
+}
+
+.level-bar {
+  height: 15px;
+  background: #e8e8e8;
+  margin-top: 8px;
+}
+
+.level-percent {
+  height: 15px;
+  background: #66cb8c;
+}
