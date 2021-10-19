@@ -64,6 +64,7 @@ export default function Home() {
       <a
         href="https://api.whatsapp.com/send?phone=+5551996801223"
         target="_blank"
+        rel="noreferrer"
         className="whatsapp-float"
       >
         <FaWhatsapp size={30} color="#fff" />

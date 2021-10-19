@@ -69,7 +69,12 @@ export default function Comments() {
         .post("/comentarios/novo", payload)
         .then(() => {
           setComment(initialComment);
-          dispatch(insertComment(payload));
+          dispatch(
+            insertComment({
+              name,
+              text,
+            })
+          );
         })
         .catch((err) => {
           console.error(err);

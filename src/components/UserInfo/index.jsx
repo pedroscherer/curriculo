@@ -13,13 +13,21 @@ export default function UserInfo() {
         </div>
         <div className="info-item">
           <IoMailOpenSharp size={18} color="#ccd1d6" />
-          <a href="mailto:pedrosalves7@gmail.com" target="_blank">
+          <a
+            href="mailto:pedrosalves7@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <label>pedrosalves7@gmail.com</label>
           </a>
         </div>
         <div className="info-item">
           <IoLinkSharp size={18} color="#ccd1d6" />
-          <a href="https://github.com/pedroscherer" target="_blank">
+          <a
+            href="https://github.com/pedroscherer"
+            target="_blank"
+            rel="noreferrer"
+          >
             <label>https://github.com/pedroscherer</label>
           </a>
         </div>

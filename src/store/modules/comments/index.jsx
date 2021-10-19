@@ -4,7 +4,7 @@ const slice = createSlice({
   name: "comments",
   initialState: [],
   reducers: {
-    insertComment: (state, action) => state,
+    insertComment: (state, action) => [action.payload, ...state],
     startComments: (state, action) => action.payload,
   },
 });

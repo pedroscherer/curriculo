@@ -56,6 +56,7 @@ export default function Header() {
         <div className="header-contact">
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://api.whatsapp.com/send?phone=+5551996801223"
           >
             <button className="whatsapp-button">
